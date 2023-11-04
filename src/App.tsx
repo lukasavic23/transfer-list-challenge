@@ -25,7 +25,6 @@ function App() {
   );
 
   function handleItemSelection(newValue: number) {
-    console.log(newValue);
     setListItems((prev) => {
       return prev.map((listItem) => {
         if (listItem.value === newValue) {
