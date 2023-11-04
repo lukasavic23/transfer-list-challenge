@@ -59,18 +59,12 @@ function App() {
     });
   }
 
-  const isButtonToRightDisabled = (): boolean => {
-    return (
-      !leftValues.length || !leftValues.some((leftValue) => leftValue.selected)
-    );
-  };
+  const isButtonToRightDisabled =
+    !leftValues.length || !leftValues.some((leftValue) => leftValue.selected);
 
-  const isButtonToLeftDisabled = (): boolean => {
-    return (
-      !rightValues.length ||
-      !rightValues.some((rightValue) => rightValue.selected)
-    );
-  };
+  const isButtonToLeftDisabled =
+    !rightValues.length ||
+    !rightValues.some((rightValue) => rightValue.selected);
 
   return (
     <main className="app-wrapper">
@@ -78,13 +72,13 @@ function App() {
         <List listItems={leftValues} onItemSelection={handleItemSelection} />
         <div className="button-actions">
           <button
-            disabled={isButtonToRightDisabled()}
+            disabled={isButtonToRightDisabled}
             onClick={handleTransferToRight}
           >
             &gt;
           </button>
           <button
-            disabled={isButtonToLeftDisabled()}
+            disabled={isButtonToLeftDisabled}
             onClick={handleTransferToLeft}
           >
             &lt;
