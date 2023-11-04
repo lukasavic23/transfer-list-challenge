@@ -5,5 +5,8 @@ https://www.youtube.com/watch?v=w0Kvt65Z2Uk&ab_channel=ReactPro
 
 To run this code install dependencies and start vite project.
 
-# npm install
-# npm run dev
+
+```bash
+npm install
+npm run dev
+```
