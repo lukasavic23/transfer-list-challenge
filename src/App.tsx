@@ -28,7 +28,7 @@ function App() {
     setListItems((prev) => {
       return prev.map((listItem) => {
         if (listItem.value === newValue) {
-          return { ...listItem, selected: !listItem.selected };
+          return { ...listItem, selected: false };
         }
         return listItem;
       });
